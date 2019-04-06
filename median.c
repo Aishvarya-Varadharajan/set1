@@ -1,7 +1,7 @@
 include<stdio.h>
 int main()
 {
-  int i,n,temp,median;
+  int i,n,temp,median,j;
   scanf("%d",&n);
   int arr[n];
   if(n <= 100000)
@@ -12,20 +12,21 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-      if(arr[i] > arr[i+1])
+      for(j=i+1;j<n;j++)
+      if(arr[i] > arr[j])
       {
         temp=arr[i];
-        arr[i]=arr[i+1];
-        arr[i+1]=temp;
+        arr[i]=arr[j];
+        arr[j]=temp;
       }
      }
      if(n%2==0)
      {
-      median=(n/2)+(n+1)/2;
+      median=(n/2)+(n+1)/2-1;
      }
      else
      {
-      median=(n+1)/2;
+      median=(n+1)/2-1;
      }
      printf("%d",arr[median]);
      
