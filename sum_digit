@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-  int digit,i=0,remainder;
+  int digit,remainder;
   int sum=0;
   scanf("%d",&digit);
   while(digit)
@@ -9,7 +9,6 @@ int main()
     remainder=digit%10;
     sum=sum+remainder;
     digit=digit/10;
-    i++;
   }
   printf("%d",sum);
   return 0;
