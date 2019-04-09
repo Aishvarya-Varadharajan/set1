@@ -4,11 +4,14 @@ int main()
   int n,i,sum;
   printf("Enter the number");
   scanf("%d",&n);
-  sum=0;
-  for(i=1;i<=n;i++)
+  if(n <= 100000)
   {
-    sum=sum+i;
+    sum=0;
+    for(i=1;i<=n;i++)
+    {
+      sum=sum+i;
+    }
+    printf("%d",sum);
   }
-  printf("%d",sum);
   return 0;
 }
