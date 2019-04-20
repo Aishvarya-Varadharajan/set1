@@ -15,4 +15,5 @@ int main()
       N=N/10;
    }
   }
+  return 0;
 }
