@@ -8,10 +8,6 @@ int main()
   {
     scanf("%d",&arr[i]);
   }
-  for(i=0;i<N;i++)
-  {
-    printf("%d",arr[K-1]);
-  }
-  
+  printf("%d",arr[K-1]);
   return 0;
 }
